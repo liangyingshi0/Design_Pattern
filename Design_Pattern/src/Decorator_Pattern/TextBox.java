@@ -1,7 +1,7 @@
 package Decorator_Pattern;
 
 //充当具体构件类
-public class TextBox extends Compent{
+public class TextBox extends Component{
 
 	@Override
 	public void display() {
