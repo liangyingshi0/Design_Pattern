@@ -1,0 +1,31 @@
+package Builder_Pattern;
+
+//Ó¢ÐÛ½ÇÉ«£¬³äµ±¾ßÌå½¨ÔìÕß
+public class HeroBuilder extends ActorBuilder{
+
+	@Override
+	public void buildType() {
+		actor.setType("Ó¢ÐÛ");
+	}
+
+	@Override
+	public void buildSex() {
+		actor.setSex("ÄÐ");
+	}
+
+	@Override
+	public void buildFace() {
+		actor.setFace("Ó¢¿¡");
+	}
+
+	@Override
+	public void buildCostume() {
+		actor.setCostume("¿ø¼×");
+	}
+
+	@Override
+	public void buildHairstyle() {
+		actor.setHairstyle("Æ®ÒÝ");
+	}
+
+}
