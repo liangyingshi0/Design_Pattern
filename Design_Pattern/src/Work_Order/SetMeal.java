@@ -2,9 +2,17 @@ package Work_Order;
 
 //充当建造者模式中的产品对象
 public class SetMeal {
+	private String setName;
 	private String drink;
 	private String food;
 	private String vegetable;
+	
+	public String getSetName() {
+		return setName;
+	}
+	public void setSetName(String setName) {
+		this.setName = setName;
+	}
 	public String getDrink() {
 		return drink;
 	}
