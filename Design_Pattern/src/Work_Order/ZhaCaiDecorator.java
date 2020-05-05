@@ -8,7 +8,7 @@ public class ZhaCaiDecorator extends SetDecorator{
 	}
 	
 	public void addZhaCai() {
-		System.out.println("Õ¥²Ë");
+		System.out.print("Õ¥²Ë  ");
 	}
 
 }

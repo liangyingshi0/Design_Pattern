@@ -8,6 +8,6 @@ public class HaiDaiSiDecorator extends SetDecorator{
 	}
 
 	public void addHaiDaiSi() {
-		System.out.println("海带丝");
+		System.out.print("海带丝  ");
 	}
 }

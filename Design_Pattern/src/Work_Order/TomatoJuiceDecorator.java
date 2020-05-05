@@ -8,7 +8,7 @@ public class TomatoJuiceDecorator extends SetDecorator{
 	}
 	
 	public void addTomatoJuice() {
-		System.out.println("·¬ÇÑÖ­");
+		System.out.print("·¬ÇÑÖ­  ");
 	}
 
 }
