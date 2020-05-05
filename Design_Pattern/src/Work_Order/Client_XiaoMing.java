@@ -1,11 +1,15 @@
 package Work_Order;
 
 //客户端测试类
-public class Client {
+public class Client_XiaoMing {
 
 	public static void main(String[] args) {
+	//小明买了套餐一，并选配了榨菜和海带丝：
+		
+		//生成套餐1具体建造者对象
 		SetMealBuilder setMeal = new Set1();
 		
+		//通过指挥者，建造完整的套餐对象
 		SetMealController sc = new SetMealController();
 		SetMeal set;
 		set = sc.construct(setMeal);
@@ -15,10 +19,14 @@ public class Client {
 		System.out.println("主食："+set.getFood());
 		System.out.println("青菜："+set.getVegetable());
 		
+		//引入装饰模式，使用半透明装饰模式
 		System.out.print("小菜：");
-		ZhaCaiDecorator zc;
-		zc = new ZhaCaiDecorator(setMeal);
-		zc.addZhaCai();
+		ZhaCaiDecorator zhaCai;
+		zhaCai = new ZhaCaiDecorator(setMeal);
+		zhaCai.addZhaCai();
+		HaiDaiSiDecorator haiDai;
+		haiDai = new HaiDaiSiDecorator(setMeal);
+		haiDai.addHaiDaiSi();
 	}
 
 }
